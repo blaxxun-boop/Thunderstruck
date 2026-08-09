@@ -1,0 +1,6 @@
+bin
+obj
+/packages
+Thunderstruck.sln.DotSettings.user
+.idea
+.vs
