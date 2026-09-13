@@ -13,7 +13,7 @@ namespace Thunderstruck;
 public class Thunderstruck : BaseUnityPlugin
 {
 	private const string ModName = "Thunderstruck";
-	private const string ModVersion = "1.0.0";
+	private const string ModVersion = "1.0.1";
 	private const string ModGUID = "org.bepinex.plugins.thunderstruck";
 
 	private static readonly ConfigSync configSync = new(ModName) { DisplayName = ModName, CurrentVersion = ModVersion, MinimumRequiredVersion = ModVersion };
@@ -32,7 +32,7 @@ public class Thunderstruck : BaseUnityPlugin
 	}
 
 	private ConfigEntry<T> config<T>(string group, string name, T value, string description, bool synchronizedSetting = true) => config(group, name, value, new ConfigDescription(description), synchronizedSetting);
-	
+
 	public static T ConvertStatusEffect<T>(StatusEffect statusEffect) where T : StatusEffect
 	{
 		T ownSE = ScriptableObject.CreateInstance<T>();
